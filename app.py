@@ -49,7 +49,7 @@ def chatbot(choice):
 # Create the Gradio interface
 iface = gr.Interface(
     fn=chatbot,
-    inputs=gr.Radio(["Kaziranga", "Kamakhya", "Manas"], label="What would you like to know about?", default=None),
+    inputs=gr.Radio(["Kaziranga", "Kamakhya", "Manas"], label="What would you like to know about?"),
     outputs=[gr.HTML(label="Video"), gr.Textbox(label="Information")],
     title="Assam Tourism Chatbot",
     live=True,
