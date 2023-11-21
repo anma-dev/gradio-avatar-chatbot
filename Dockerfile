@@ -1,4 +1,4 @@
 FROM python:3.10-slim
 WORKDIR /code
-RUN pip install gradio, base64
+RUN pip install gradio
 CMD ["python", "-u", "app.py"]
